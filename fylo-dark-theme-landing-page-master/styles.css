@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(218, 28%, 13%);
+}
+p {
+  color: rgb(255, 253, 253, 0.9);
+}
+/* Headings font family */
+.main-text h2,
+.feature-text h3,
+.productive-text h2,
+.signup-des h2 {
+  font-family: "Raleway", sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 15px;
+  width: 100%;
+  background: hsl(217, 28%, 15%);
+}
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+.navbar-list {
+  list-style: none;
+}
+.navbar-list li a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(255, 253, 253, 0.9);
+}
+.navbar-list li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.logo {
+  justify-content: left;
+}
+.logo img {
+  height: 30px;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 20%;
+  background: hsl(217, 28%, 15%);
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.intro-image img {
+  width: 100%;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  color: hsl(0, 0%, 100%);
+}
+.main-text h1,
+.main-text p,
+.main-text button {
+  margin: 20px;
+}
+.special-button {
+  padding: 15px 60px;
+  border-radius: 18px;
+  background-color: rgb(55, 184, 235);
+  color: white;
+}
+.special-button:hover {
+  background-color: rgb(178, 220, 236);
+}
+.feature-text {
+  color: white;
+}
+.feature-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  width: 100%;
+}
+.single-feature {
+  padding: 5% 8%;
+}
+.feature-img {
+  padding-bottom: 30px;
+}
+.feature-text h3 {
+  padding-bottom: 10px;
+}
+.productive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 5%;
+  color: white;
+}
+.productive-img img {
+  width: 100%;
+}
+.productive-text {
+  padding: 0 8%;
+}
+.productive-text h2 {
+  width: 50%;
+  font-size: 30px;
+}
+.productive-text p {
+  padding-top: 20px;
+}
+
+.productive-text div {
+  position: relative;
+  color: #62e0d9;
+  margin-top: 5%;
+}
+.productive-text div:hover {
+  color: white;
+  cursor: pointer;
+}
+.productive-text div span {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+.productive-text div img {
+  position: absolute;
+  bottom: 0;
+  left: 148px;
+}
+.team {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 5% 5% 0;
+  color: white;
+}
+.quote-img {
+  position: absolute;
+  left: 4%;
+  top: -25px;
+  z-index: -1;
+}
+.quote-img img {
+  height: 30px;
+}
+.profile {
+  background: hsl(219, 30%, 18%);
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 20px;
+}
+.profile-name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.profile-name div img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile-name div {
+  font-size: 14px;
+}
+.signup {
+  position: absolute;
+  top: -20%;
+  background: hsl(217, 28%, 15%);
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5%;
+  text-align: center;
+  z-index: 99;
+  border-radius: 8px;
+}
+.signup h2 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+.signup p {
+  padding-bottom: 20px;
+}
+.signup-button {
+  width: 40%;
+  float: right;
+  height: 40px;
+  border-radius: 16px;
+  background-color: rgb(55, 184, 235);
+  color: white;
+}
+.signup-button:hover {
+  background-color: rgb(178, 220, 236);
+}
+.signupform input {
+  float: left;
+  height: 40px;
+  width: 55%;
+  border-radius: 16px;
+  border: none;
+}
+.footer-logo img {
+  margin-top: 20%;
+  height: 30px;
+}
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+.detail-1,
+.detail-2,
+.detail-3,
+.detail-4,
+.detail-5 {
+  width: 20%;
+}
+.detail-2,
+.detail-3,
+.detail-4,
+.detail-5 {
+  padding-left: 5%;
+}
+.detail-3 a,
+.detail-4 a {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 253, 253, 0.9);
+  padding-bottom: 20px;
+}
+.detail-3 a:hover,
+.detail-4 a:hover {
+  cursor: pointer;
+  color: white;
+}
+.detail-1 {
+  display: flex;
+  flex-direction: row;
+}
+.detail-1 img {
+  height: 20px;
+  padding-right: 10px;
+}
+.detail-2 div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.detail-2 div img {
+  padding-right: 20px;
+}
+.detail-5 svg {
+  height: 30px;
+  width: 30px;
+  border: solid white 2px;
+  padding: 5px;
+  margin-left: 5%;
+  border-radius: 50%;
+}
+.detail-5 svg path {
+  fill: white;
+}
+.detail-5 svg:hover {
+  border: solid #62e0d9 2px;
+}
+
+footer {
+  position: relative;
+  background: hsl(216, 53%, 9%);
+  margin-top: 20%;
+  padding: 5%;
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+  .hero-section {
+    padding: 0;
+    background-image: url("images/bg-curvy-desktop.svg");
+  }
+  .feature-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .single-feature {
+    padding: 15% 0;
+  }
+  .productive {
+    flex-direction: column;
+    padding-bottom: 20%;
+  }
+  .productive-text h2 {
+    width: 100%;
+    font-size: 22px;
+  }
+  .team {
+    flex-direction: column-reverse;
+    margin: 15%;
+  }
+  .signup {
+    position: absolute;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .signupform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .signup-button,
+  .signupform input {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .footer-logo img {
+    margin-top: 60%;
+  }
+  .footer-details {
+    flex-direction: column;
+  }
+  .detail-1,
+  .detail-2,
+  .detail-3,
+  .detail-4,
+  .detail-5 {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .detail-2,
+  .detail-3,
+  .detail-4,
+  .detail-5 {
+    padding-left: 0;
+  }
+  .detail-5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  footer {
+    margin-top: 50%;
+  }
+}
