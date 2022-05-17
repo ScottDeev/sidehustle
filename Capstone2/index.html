@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Capstone Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon">
+        <h1>HOME</h1>
+      </div>
+        <nav class="navbar">
+          <ul>
+            <div class="close-menu">
+              <img src="./image/icon-close-menu.svg" alt="" />
+            </div>
+            <li class="feature">
+              <a href="#"
+                >Features</a>
+            </li>
+            <li class="company">
+              <a href="#" 
+                >Company</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="open-menu">
+          <img src="./image/icon-menu.svg" alt="" />
+        </div>
+      </header>
+    </navbar>
+    <main class="main">
+      <div class="form-div">
+        <form name="RegForm" action="submit" class="form"
+        onsubmit="return formValidation()" method="post">
+        <h1>Registration Form</h1>
+          <div>
+            <label for="fname">Username</label>
+            <input type="text" id="uname" name="username" placeholder="Enter your Username"/>
+          </div>
+          <div>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address " />
+          </div>
+          <div>
+
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" name="number" placeholder="Enter your Phone Number"/>
+          </div>
+          <div>
+
+            <label for="password">Password</label>
+            <div class="pword-div">
+              <input class="passwordInput" type="password" id="id_password" name="Password" placeholder="Enter your Password" />
+              <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+          <div>
+
+            <label for="confirmpword">Confirm Password</label>
+            <input type="password" id="pword" name="fname" placeholder="Confirm your Password" />
+          </div>
+          <div>
+
+            <label for="gender"> Gender</label>
+            <select name="gender">
+              <option value="none" selected>Male</option>
+              <option value="female">Female</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <input class="submit" type="submit" value="Submit" name ="Submit">
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
